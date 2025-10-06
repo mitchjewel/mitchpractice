@@ -1,0 +1,13 @@
+function validateLoginB() {
+  const user = document.getElementById("usernameB").value;
+  const pass = document.getElementById("passwordB").value;
+
+  if (user === "user" && pass === "abcd") {
+    alert("Login successful! (Set B)");
+    window.location.href = "portfolioB.html";
+    return false;
+  } else {
+    alert("Invalid credentials. Try again.");
+    return false;
+  }
+}
